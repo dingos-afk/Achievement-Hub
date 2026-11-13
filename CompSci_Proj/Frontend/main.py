@@ -673,6 +673,20 @@ def save_achievement(
     refresh_completed_game_count(state)
 
     return edit_game_achievements(state, appid)
+    
+set_site_information(
+    author="Dinesh Goswami",
+    description=(
+        "Achievement Hub is a website for searching video games, "
+        "organizing a personal game library, and tracking achievements."
+    ),
+    sources=(
+        "Steam Store Search API, Steam Web API, Drafter, and FastAPI."
+    ),
+    planning="See planning_document.md in the project repository.",
+    links=[]
+)
+    
 start_server(
     State("Player"),
     site_title="Achievement Hub",
