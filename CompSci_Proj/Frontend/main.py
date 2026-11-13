@@ -674,19 +674,25 @@ def save_achievement(
 
     return edit_game_achievements(state, appid)
     
+set_website_title("Achievement Hub")
+
 set_site_information(
     author="Dinesh Goswami",
     description=(
-        "Achievement Hub is a website for searching video games, "
-        "organizing a personal game library, and tracking achievements."
+        "Achievement Hub allows users to search for video games, "
+        "organize their personal library, and track achievements."
     ),
     sources=(
         "Steam Store Search API, Steam Web API, Drafter, and FastAPI."
     ),
-    planning="See planning_document.md in the project repository.",
-    links=[]
+    planning=["planning_document.md"],
+    links=[
+        "https://github.com/dingos-afk/Achievement-Hub"
+    ]
 )
-    
+
+hide_debug_information()
+set_website_framed(False)
 start_server(
     State("Player"),
     site_title="Achievement Hub",
