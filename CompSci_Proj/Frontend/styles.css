@@ -1,0 +1,42 @@
+/* Main visual theme for Achievement Hub.
+   Edit this file to change colors, spacing, and typography. */
+
+body {
+    background: #10131d;
+    color: #eef2ff;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #a9b8ff;
+}
+
+a {
+    color: #a9c7ff;
+    margin-right: 7px;
+}
+
+button {
+    background: #5368d8;
+    color: white;
+    border: 0;
+    border-radius: 7px;
+    padding: 8px 13px;
+    margin: 5px 4px 5px 0;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    background: #202638;
+    color: #ffffff;
+    border: 1px solid #56617a;
+    border-radius: 5px;
+    padding: 7px;
+    margin: 5px 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #39435b;
+    margin: 15px 0;
+}
