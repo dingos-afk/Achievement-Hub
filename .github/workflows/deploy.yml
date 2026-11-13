@@ -1,9 +1,8 @@
-
 name: Deploy Achievement Hub
 
 on:
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -19,12 +18,15 @@ jobs:
 
       - uses: astral-sh/setup-uv@v5
 
-      - run: uv python install 3.12
+      - name: Install Python
+        run: uv python install 3.12
 
-      - name: Build the site
-        run: |
-          cd CompSci_Proj/Frontend
-          uvx --with requests drafter main.py --compile --output-directory ../../_site --production
+      - name: Install dependencies
+        run: uv pip install --system requests drafter
+
+      - name: Build website
+        working-directory: CompSci_Proj/Frontend
+        run: python -m drafter main.py --compile --output-directory ../../_site --production
 
       - uses: actions/upload-pages-artifact@v3
         with:
