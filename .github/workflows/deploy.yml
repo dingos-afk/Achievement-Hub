@@ -26,7 +26,15 @@ jobs:
         run: |
           uv venv
           uv pip install --python .venv/bin/python drafter requests
-          .venv/bin/python -m drafter main.py --compile --output-directory ../../_site --production
+
+          .venv/bin/python -m drafter main.py \
+            --compile \
+            --output-directory ../../_site \
+            --production
+
+          cp models.py ../../_site/models.py
+          cp design.py ../../_site/design.py
+          cp styles.css ../../_site/styles.css
 
       - uses: actions/upload-pages-artifact@v3
         with:
