@@ -225,7 +225,7 @@ def library(state: State) -> Page:
 
 
 @route
-def search_games(state: State, search_name: str = "", priority: int = 3): -> Page:
+def search_games(state: State, search_name: str = "", priority: int = 3) -> Page:
     """Search Steam through the separate FastAPI backend."""
 
     state.Search_priority = int(priority)
