@@ -1,42 +1,83 @@
-/* Main visual theme for Achievement Hub.
-   Edit this file to change colors, spacing, and typography. */
+/*
+Main visual theme for Achievement Hub.
 
+This stylesheet controls the website's colors, spacing,
+typography, buttons, input fields, and horizontal dividers.
+
+*/
+
+
+/* ------------------------------
+   Main page appearance
+------------------------------ */
+
+/* Style the overall webpage. */
 body {
-    background: #10131d;
-    color: #eef2ff;
-    font-family: Arial, sans-serif;
+    background: #10131d;       /* Dark background color. */
+    color: #eef2ff;             /* Default text color. */
+    font-family: Arial, sans-serif; /* Default font. */
 }
 
+
+/* ------------------------------
+   Headings
+------------------------------ */
+
+/* Apply the same color to all major heading levels. */
 h1, h2, h3 {
-    color: #a9b8ff;
+    color: #a9b8ff;             /* Light purple-blue heading color. */
 }
 
+
+/* ------------------------------
+   Navigation links
+------------------------------ */
+
+/* Customize clickable links throughout the website. */
 a {
-    color: #a9c7ff;
-    margin-right: 7px;
+    color: #a9c7ff;             /* Light blue link color. */
+    margin-right: 7px;          /* Space between links. */
 }
 
+
+/* ------------------------------
+   Buttons
+------------------------------ */
+
+/* Customize buttons used throughout Achievement Hub. */
 button {
-    background: #5368d8;
-    color: white;
-    border: 0;
-    border-radius: 7px;
-    padding: 8px 13px;
-    margin: 5px 4px 5px 0;
-    cursor: pointer;
+    background: #5368d8;        /* Blue button background. */
+    color: white;               /* White button text. */
+    border: 0;                  /* Remove the default border. */
+    border-radius: 7px;         /* Round the button corners. */
+    padding: 8px 13px;          /* Add space inside the button. */
+    margin: 5px 4px 5px 0;      /* Add space around the button. */
+    cursor: pointer;            /* Display a pointer when hovering. */
 }
 
+
+/* ------------------------------
+   Input fields
+------------------------------ */
+
+/* Style text boxes, text areas, and dropdown menus. */
 input, textarea, select {
-    background: #202638;
-    color: #ffffff;
-    border: 1px solid #56617a;
-    border-radius: 5px;
-    padding: 7px;
-    margin: 5px 0;
+    background: #202638;        /* Dark input background. */
+    color: #ffffff;             /* White text inside inputs. */
+    border: 1px solid #56617a;  /* Thin gray-blue border. */
+    border-radius: 5px;         /* Slightly round the corners. */
+    padding: 7px;               /* Add space inside the fields. */
+    margin: 5px 0;              /* Add vertical spacing. */
 }
 
+
+/* ------------------------------
+   Horizontal dividers
+------------------------------ */
+
+/* Customize horizontal lines separating page sections. */
 hr {
-    border: 0;
-    border-top: 1px solid #39435b;
-    margin: 15px 0;
+    border: 0;                  /* Remove the default border. */
+    border-top: 1px solid #39435b; /* Add a thin divider line. */
+    margin: 15px 0;             /* Add space above and below. */
 }
