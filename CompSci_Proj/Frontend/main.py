@@ -18,7 +18,7 @@ from design import navigation, page_heading
 
 # Local development address for the FastAPI backend.
 # Change this to the deployed backend URL when hosted.
-BACKEND_URL = "http://127.0.0.1:8000"
+BACKEND_URL = "https://achievement-hub-backend.onrender.com"
 
 
 def get_achievements_from_backend(appid: int) -> list:
