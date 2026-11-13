@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v5
       - run: uv python install 3.12
-      - run: uvx --with requests drafter Website/main.py --compile --output-directory _site --production
+      - run: uvx --with requests drafter CompSci_Proj/Frontend/main.py --compile --output-directory _site --production
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
