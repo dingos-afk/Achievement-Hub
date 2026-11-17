@@ -13,8 +13,8 @@ typography, buttons, input fields, and horizontal dividers.
 
 /* Style the overall webpage. */
 body {
-    background: #10131d;       /* Dark background color. */
-    color: #eef2ff;             /* Default text color. */
+    background: #000000;       /* Dark background color. */
+    color: #ffffff;             /* Default text color. */
     font-family: Arial, sans-serif; /* Default font. */
 }
 
@@ -25,7 +25,7 @@ body {
 
 /* Apply the same color to all major heading levels. */
 h1, h2, h3 {
-    color: #a9b8ff;             /* Light purple-blue heading color. */
+    color: #ffffff;             /* Light purple-blue heading color. */
 }
 
 
@@ -35,7 +35,7 @@ h1, h2, h3 {
 
 /* Customize clickable links throughout the website. */
 a {
-    color: #a9c7ff;             /* Light blue link color. */
+    color: #ffffff;             /* Light blue link color. */
     margin-right: 7px;          /* Space between links. */
 }
 
